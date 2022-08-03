@@ -47,6 +47,7 @@ a {
   color: var(--secondary-title-text-color);
   border: 1px solid #000000;
 }
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -252,7 +253,12 @@ a {
 /*наша команда*/
 .team {
 }
-
+.container work{
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
 .work-title {
   font-weight: 700;
   font-size: 36px;
@@ -260,8 +266,17 @@ a {
   text-align: center;
   color: var(--primary-text-color);
 }
+
+.container work{
+
+
+}
 .team-item {
   background-color: var(--primary-white-color);
+}
+
+.container team{
+
 }
 
 .team-title {
@@ -272,7 +287,13 @@ a {
   color: var(--primary-text-color);
 }
 
-.vocation {
+.container team{
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+
+  .vocation {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
