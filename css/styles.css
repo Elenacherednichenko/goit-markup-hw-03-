@@ -130,7 +130,14 @@ a {
   margin-top: 0;
   margin-bottom: 0;
 }
-
+.container hero{
+  max-width: 1170px;
+  height: 101px;
+  padding-left: 215px;
+  padding-top: 774px;
+  margin: 0 auto;
+  outline: 2px solid tomato;
+}
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -254,9 +261,10 @@ a {
 .team {
 }
 .container work{
-  max-width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 1170px;
+  height: 386px;
+  padding-left: 215px;
+  padding-top: 969px;
   margin: 0 auto;
 }
 .work-title {
@@ -267,10 +275,6 @@ a {
   color: var(--primary-text-color);
 }
 
-.container work{
-
-
-}
 .team-item {
   background-color: var(--primary-white-color);
 }
@@ -288,9 +292,10 @@ a {
 }
 
 .container team{
-  max-width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 1170px;
+  padding-left: 215px;
+  height: 368px;
+  padding-top: 1635px;
   margin: 0 auto;
 
   .vocation {
