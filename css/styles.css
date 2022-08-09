@@ -28,33 +28,51 @@ body {
 ul {
   list-style: none;
 }
+
 a {
   text-decoration: none;
 }
+
 .nav {
-  background-color: var(--primary-white-color);
   display: flex;
   align-items: center;
 }
-.nav.item:not(:last :last-child){
+
+.nav.item:not(:last :last-child)
+{
   margin-right: 40px;
+}
+
+
+
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  font-weight: 700;
+  color: var(--accent-color);
+  list-style: none;
+}
+
+.logo-accent {
+  color: var(--secondary-title-text-color);
 }
 
 .header {
   line-height: 1.19;
-  letter-spacing: 0.03em;
   font-weight: 500;
-  color: var(--secondary-title-text-color);
-  border: 1px solid #000000;
+  border-bottom: 1px solid #ececec;
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
 }
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  outline: 2 pix solid tomato;
+  outline: 2 px solid tomato;
 }
 .img {
-  display-block;
+  display:block;
   max-width: 100%;
   height: auto;
 }
@@ -66,62 +84,50 @@ a {
   margin: 0 auto;
   outline: 2px solid tomato;
 }
-  
-  .benefits-item {
-    flex-basis: calc(100%-90px)/ 4;
-  }
 
 
-.header:hover {
+
+.link.current {
   color: var(--accent-color);
 }
 
-/*Logo*/
-
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-size: 26px;
-  line-height: 1.19;
-  font-weight: 700;
-  color: var(--secondary-title-text-color);
-}
-
-.logo-accent {
+.link:hover,
+.link:focus {
   color: var(--accent-color);
 }
 
-.header current {
-  color: var(--accent-color);
-}
-.header item:hover,
-.header item:focus {
-  color: var(--accent-color);
-}
-
-.header item {
+.link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+}
+
+.mailto {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--accent-color);
 }
 
 .mailto:hover,
 .mailto:focus {
   color: var(--accent-color);
 }
-
 .phone {
+  font-family: inherit;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+  line-height: 1.14;
   color: var(--title-text-color);
   display: flex;
   justify-content: center;
 }
 
-.phone:hover {
+.phone:hover,
+.phone:focus {
   color: var(--accent-color);
 }
 
@@ -137,51 +143,60 @@ a {
   padding-top: 774px;
   margin: 0 auto;
   outline: 2px solid tomato;
-}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
-  text-align: center;
   text-transform: uppercase;
+  text-align: center;
+  margin-right:auto;
+  margin-left:auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero button:hover,
 .hero button:focus {
-  background-color: var(--secondary-accent-coloraccent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: var(--secondary-accent-color);
   border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--primary-white-color);
 }
 
 .hero button {
   font-family: inherit;
   cursor: pointer;
-  font-weight: 700;
+  display: flex;
+  align-items: center;
+  text-align: center;font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  display: flex;
-  align-items: center;
-  text-align: center;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
 
 .button {
   display: inline-block;
-  height: 30px;
   min-width: 136px;
   vertical-align: bottom;
   border-radius: 4px;
   padding: 10px 32px;
   text-align: center;
-  color: var(--primary-text-color);
-  background-color: var(--accent-color);
+  font-weight: 500;
+  font-size: 16px;
+  height: 38px;
+  line-height: 1.6;
+  color: var(--primary-white-color);
+  background-color: var(--second-background-color);
   border: 1px solid transparent;
 }
+
+
+
 
 .button.primary:hover,
 .button.primary:focus {
@@ -196,7 +211,6 @@ a {
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
@@ -226,7 +240,7 @@ a {
 }
 /* наш особенност*/
 .section features {
-  background-color: var(--primary-white-colorwhite-color);
+  background-color: var(--primary-white-color);
 }
 
 .visually-hidden {
@@ -259,6 +273,7 @@ a {
 
 /*наша команда*/
 .team {
+  background-color: var(--secondary-background-color);
 }
 .container work{
   max-width: 1170px;
@@ -267,26 +282,19 @@ a {
   padding-top: 969px;
   margin: 0 auto;
 }
+
+.section-title {
+  background-color: var(--secondary-background-color);
+}
+
+.team-list {
+  background-color: var(--secondary-background-color);
+}
+
 .work-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
-  color: var(--primary-text-color);
-}
-
-.team-item {
-  background-color: var(--primary-white-color);
-}
-
-.container team{
-
-}
-
-.team-title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
   text-align: center;
   color: var(--primary-text-color);
 }
@@ -298,7 +306,19 @@ a {
   padding-top: 1635px;
   margin: 0 auto;
 
-  .vocation {
+.team-item {
+background-color: var(--primary-white-color);
+}
+
+.team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+
+.vocation {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -316,10 +336,10 @@ a {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
+  background-color: (var(--primary-white-color);
 }
 
 .example work {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
   color: var(--title-text-color);
@@ -330,16 +350,18 @@ a {
   padding-top: 60px;
 }
 
-.footer.logo {
+.logo-down {
   display: block;
   font-family: "Raleway";
+  font-style: normal;
   font-size: 26px;
   line-height: 1.19;
   font-weight: 700;
-  color: var(--primary-white-color);
-  background-color: var(--primary-background-color);
-  padding-top: 60px;
+  color: var(--secondary-title-text-color);
   margin-bottom: 20px;
+  padding-top: 60px;
+  text-decoration: none;
+  list-style: none;
 }
 
 .adress {
@@ -352,50 +374,40 @@ a {
 }
 
 .adress-item {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   color: var(--primary-white-color);
 }
 
 .footer text {
-  font-weight: 700;
-  font-family: "Raleway";
-  font-size: 26px;
+  font-family: "Roboto";
+  font-size: 14px;
   line-height: 1.19;
-  color: var (--primary-white-color);
-  background-color: var(--primary-background-color);
+  color: var(--primary-white-color);
   margin-bottom: 20px;
 }
 
-.link {
-  text-decoration: none;
-  background-color: var(--primary-background-color);
-}
-
-.mailto {
-  font-weight: 400;
+.mailto-item {
+  width: 135px;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.02em;
-  width: 135px;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--primary-white-color);
 }
 
-.mailto:hover,
-.mailto:focus {
+.mailto-item:hover,
+.mailto-item:focus {
   color: var(--accent-color);
 }
 
-.phone {
+.tel-item {
   font-family: inherit;
   font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0.03em;
   width: 231px;
   color: rgba(255, 255, 255, 0.6);
 }
-.phone:hover,
-.phone:focus {
+.tel-item:hover,
+.tel-item:focus {
   color: var(--accent-color);
 }
