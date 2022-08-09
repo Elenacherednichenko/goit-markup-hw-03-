@@ -69,7 +69,7 @@ a {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  outline: 2 px solid tomato;
+  outline: 2px solid tomato;
 }
 .img {
   display:block;
@@ -145,13 +145,13 @@ a {
   outline: 2px solid tomato;
 
 .hero-title {
+  max-width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
   text-transform: uppercase;
-  text-align: center;
   margin-right:auto;
   margin-left:auto;
   padding-top: 200px;
@@ -331,6 +331,7 @@ background-color: var(--primary-white-color);
 }
 
 .gallery-title {
+  flex-wrap: wrap;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
