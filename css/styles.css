@@ -19,6 +19,7 @@ html {
 
 body {
   margin: 0;
+  padding-top: 80px;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -43,10 +44,12 @@ a {
   margin-right: 40px;
 }
 
-
-
-
 .logo {
+ margin-top: 24px;
+ margin-left: 215px;
+ margin-bottom: 25px;
+  width: 145px;
+  display: inline-block;
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   line-height: 1.19;
@@ -65,6 +68,7 @@ a {
   border-bottom: 1px solid #ececec;
   color: var(--primary-text-color);
   background-color: var(--primary-white-color);
+  outline: 2px solid tomato;
 }
 .section {
   padding-top: 94px;
@@ -77,6 +81,11 @@ a {
   height: auto;
 }
 
+.list{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 .container {
   max-width: 1200px;
   padding-left: 15px;
@@ -88,7 +97,11 @@ a {
 
 
 .link.current {
+  margin-top: 32px;
+  display: inline-block;
+  align-items: center;
   color: var(--accent-color);
+  
 }
 
 .link:hover,
@@ -97,6 +110,8 @@ a {
 }
 
 .link {
+  margin-top: 32px;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -135,9 +150,10 @@ a {
   background-color: var(--primary-background-color);
   margin-top: 0;
   margin-bottom: 0;
+  text-align: center;
 }
 .container hero{
-  max-width: 1170px;
+  max-width: 1600px;
   height: 101px;
   padding-left: 215px;
   padding-top: 774px;
@@ -145,6 +161,9 @@ a {
   outline: 2px solid tomato;
 
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
   max-width: 696px;
   font-weight: 900;
   font-size: 44px;
@@ -167,6 +186,7 @@ a {
 }
 
 .hero button {
+  margin: 0 auto;
   font-family: inherit;
   cursor: pointer;
   display: flex;
@@ -195,9 +215,6 @@ a {
   border: 1px solid transparent;
 }
 
-
-
-
 .button.primary:hover,
 .button.primary:focus {
   color: var(--primary-white-color);
@@ -205,6 +222,7 @@ a {
 }
 
 .button.primary {
+  display: inline-block;
   font-family: inherit;
   cursor: pointer;
   font-weight: 500;
@@ -222,6 +240,7 @@ a {
 }
 
 .btn-group .button {
+  display: inline-block;
   font-family: inherit;
   cursor: pointer;
   font-weight: 500;
@@ -239,6 +258,10 @@ a {
   display: block;
 }
 /* наш особенност*/
+.container .features
+
+
+
 .section features {
   background-color: var(--primary-white-color);
 }
@@ -345,7 +368,13 @@ background-color: var(--primary-white-color);
   line-height: 1.9;
   color: var(--title-text-color);
 }
-
+.container footer{
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid tomato; 
+}
 .footer {
   background-color: var(--primary-background-color);
   padding-top: 60px;
